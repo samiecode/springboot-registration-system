@@ -1,0 +1,43 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: REGISTRATION_SYSTEM
+
+  profiles:
+    active: prod
+
+  datasource:
+    url: jdbc:mysql://spring-aws-db.c6o12rrl7pfm.us-east-1.rds.amazonaws.com:3306/registration_system
+    password: springaws
+    username: springaws
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: codewithsamie@gmail.com
+    password: lbdngqrtorehgljz
+    protocol: smtp
+
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: false
+          starttls:
+            enable: true
+          connectionTimeOut: 20000
+          timeOut: 10000
+          writeTimeOut: 5000
