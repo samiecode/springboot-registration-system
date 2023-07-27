@@ -40,13 +40,12 @@ public class AppUserService {
         }
 
         User user = User.builder()
-                .firstName(request.firstName())
-                .lastName(request.lastName())
+                .fullName(request.fullName())
                 .email(request.email())
                 .password(passwordEncoder.encode(request.password()))
                 .role(UserRole.USER)
                 .locked(false)
-                .enabled(false)
+                .enabled(true)
                 .build();
 
         appUserRepository.save(user);
@@ -58,7 +57,11 @@ public class AppUserService {
 
         String link = "http://localhost:8081/api/v1/customer/confirm?token=" + token;
 
-        emailSender.send(request.email(), buildEmail( request.firstName(), link));
+        // I remove this email sender because is not a commercial site
+
+        //emailSender.send(request.email(), buildEmail( request.fullName(), link));
+
+        emailSender.send("codewithsamie@gmail.com", adminEmail(request.fullName(), request.email()));
 
         //TODO: If there is an error why sending the email to the register user, delete the user data from the database
         // And Throw an Error
@@ -68,6 +71,10 @@ public class AppUserService {
                 .header(HttpHeaders.AUTHORIZATION, "Bearer " + jwtToken)
                 .header(HttpHeaders.ACCESS_CONTROL_EXPOSE_HEADERS, "Authorization")
                 .body("Account Created Successfully!");
+    }
+
+    private String adminEmail(String name, String email){
+        return "<div>" +  name + " has successfully register for registration system with " + email +  "</div";
     }
 
     private String buildEmail(String name, String link){

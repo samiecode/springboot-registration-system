@@ -4,10 +4,8 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 
 public record RegistrationRequest(
-        @NotBlank(message = "firstname required")
-        String firstName,
-        @NotBlank(message = "lastname required")
-        String lastName,
+        @NotBlank(message = "full name required")
+        String fullName,
         @NotBlank(message = "email required")
         @Email(message = "invalid email")
         String email,

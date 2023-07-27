@@ -44,10 +44,8 @@ public class User implements UserDetails {
     private Long id;
 
     @Column(nullable = false)
-    private String firstName;
+    private String fullName;
 
-    @Column(nullable = false)
-    private String lastName;
 
     @Column(nullable = false)
     private String email;
@@ -61,10 +59,6 @@ public class User implements UserDetails {
     private String accessToken;
     private Boolean locked = false;
     private Boolean enabled = true;
-
-    public String getName(){
-        return this.firstName + " " + this.lastName;
-    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

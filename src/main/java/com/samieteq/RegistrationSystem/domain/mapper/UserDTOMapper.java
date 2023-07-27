@@ -17,9 +17,7 @@ public class UserDTOMapper implements Function<User, UserDTO> {
 
         return new UserDTO(
                 user.getId(),
-                user.getFirstName(),
-                user.getLastName(),
-                user.getName(),
+                user.getFullName(),
                 user.getEmail(),
                 user.getAuthorities()
                         .stream()
