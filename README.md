@@ -25,6 +25,7 @@ This is a basic Spring Boot registration application with signup, signin, and da
 - React/NextJs, TypeScript
 - TailWindCSS
 - Next-Auth, Axios, React-hot-toast, Formik, Yup Library's
+- Amazon Relational Database Services (MySQL)
 
 ## Author
 

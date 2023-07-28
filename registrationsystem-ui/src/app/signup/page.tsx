@@ -69,6 +69,7 @@ export default function Signup() {
 							 		duration: 4000,
 							 	});
 							} catch (err) {
+								// @ts-ignore
 								toast.error(err.response.data.message, {
 									duration: 5000,
 								});
