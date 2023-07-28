@@ -1,6 +1,6 @@
 import {SERVER_URL} from "@/app/constant";
 import axios from "axios";
-export function registerUser(credentials : {fullName:string, email:string, password:string}){
+export function registerUser(credentials: any){
     const path = "user"
 
     try {

@@ -45,10 +45,4 @@ public class RegistrationSystemExceptionsHandler extends ResponseEntityException
         return new ResponseEntity<>(errorDetail, HttpStatus.BAD_REQUEST);
     }
 
-    @ExceptionHandler(MailSendException.class)
-    public ResponseEntity<?> handleExceptions(MailSendException e){
-        ErrorDetail errorDetail = new ErrorDetail(e.getMessage(), LocalDateTime.now());
-        return new ResponseEntity<>(errorDetail, HttpStatus.BAD_REQUEST);
-    }
-
 }

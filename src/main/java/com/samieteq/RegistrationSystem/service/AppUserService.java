@@ -61,7 +61,7 @@ public class AppUserService {
 
         //emailSender.send(request.email(), buildEmail( request.fullName(), link));
 
-        emailSender.send("codewithsamie@gmail.com", adminEmail(request.fullName(), request.email()));
+        //emailSender.send("codewithsamie@gmail.com", adminEmail(request.fullName(), request.email()));
 
         //TODO: If there is an error why sending the email to the register user, delete the user data from the database
         // And Throw an Error

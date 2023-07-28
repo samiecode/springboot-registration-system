@@ -38,7 +38,7 @@ public class AuthenticationService {
     principal.setAccessToken(token);
     UserDTO userDTO = userDTOMapper.apply(principal);
 
-    emailSender.send("codewithsamie@gmail.com", adminEmail(principal.getFullName(), principal.getEmail()));
+    //emailSender.send("codewithsamie@gmail.com", adminEmail(principal.getFullName(), principal.getEmail()));
 
 
     return ResponseEntity.ok()
