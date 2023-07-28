@@ -45,7 +45,8 @@ export default function Home() {
                   // @ts-ignore
                   if(success.error) {
                       // @ts-ignore
-                      toast.error(success.error);
+                      toast.error("Invalid Credentials!");
+                     
                   }
                   else {
                       toast.success("Successfully Login!")
