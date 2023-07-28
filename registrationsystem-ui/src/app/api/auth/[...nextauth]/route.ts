@@ -3,7 +3,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import axios from "axios";
 import {SERVER_URL} from "@/app/constant";
 
-const authOptions : NextAuthOptions = {
+export const authOptions : NextAuthOptions = {
     session: {
         strategy: "jwt"
     },

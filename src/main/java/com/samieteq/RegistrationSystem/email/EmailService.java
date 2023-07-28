@@ -25,8 +25,8 @@ public class EmailService implements EmailSender {
             //helper.addAttachment("heading.svg", new ClassPathResource("static/images/heading.svg"));
             helper.setText(email, true);
             helper.setTo(to);
-            helper.setSubject("Confirm your email");
-            helper.setFrom("hello@amigoscode.com");
+            helper.setSubject("Registration System Notification");
+            helper.setFrom("samieteqdev@gmail.com");
             mailSender.send(mimeMessage);
 
             log.info("Email successfully sent to {}", to );
