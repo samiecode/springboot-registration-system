@@ -24,7 +24,7 @@ export default function Signup() {
     return(
         <main className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-5">
 
-            <div className="flex min-h-full flex-col justify-center px-14 bg-white drop-shadow-md rounded-xl py-16 ">
+            <div className="flex min-h-full flex-col justify-center px-12 bg-white drop-shadow-md rounded-xl py-16 ">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <h2 className="text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Create your account</h2>
                 </div>

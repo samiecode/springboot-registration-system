@@ -74,7 +74,7 @@ public class AppUserService {
     }
 
     private String adminEmail(String name, String email){
-        return "<div>" +  name + " has successfully register for registration system with " + email +  "</div";
+        return "<div style=\"font-weight: 600;\">" +  name + " has successfully register for registration system with " + email +  "</div>";
     }
 
     private String buildEmail(String name, String link){

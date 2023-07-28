@@ -23,7 +23,6 @@ public class AppUserController {
 
     @PostMapping
     public ResponseEntity<?> registerCustomer(@RequestBody @Valid RegistrationRequest request, BindingResult error) {
-        log.info("Enter successfully");
 
         if (error.hasErrors()){
 
