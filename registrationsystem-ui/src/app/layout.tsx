@@ -17,13 +17,19 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <NextAuthProvider>
-          <Toaster/>
-            {children}
-        </NextAuthProvider>
-      </body>
-    </html>
-  )
+		<html lang="en">
+			<body className={inter.className}>
+				<div className="w-full py-2 text-white absolute bg-indigo-600 top-0 left-0 text-center text-[12px]">
+					<p>
+						Notice: I&apos;m trying to deploy the backend to AWS, so
+						it may not be working properly with the frontend now, but it working locally
+					</p>
+				</div>
+				<NextAuthProvider>
+					<Toaster />
+					{children}
+				</NextAuthProvider>
+			</body>
+		</html>
+  );
 }

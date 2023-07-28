@@ -40,8 +40,7 @@ export default function Home() {
 								"Password is required*"
 							),
 						})}
-            onSubmit={async (values, { setSubmitting }) => {
-              
+						onSubmit={async (values, {setSubmitting}) => {
 							const success = await signIn("credentials", {
 								redirect: false,
 								username: values.email,
