@@ -1,5 +1,11 @@
 server:
   port: 8081
+  ssl:
+    key-alias: spring-https
+    key-store: classpath:registrationsystem.jks
+    key-store-type: JKS
+    key-password: password
+
 
 spring:
   application:
