@@ -6,7 +6,6 @@ server:
     key-store-type: JKS
     key-password: password
 
-
 spring:
   application:
     name: REGISTRATION_SYSTEM
