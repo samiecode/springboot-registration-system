@@ -1,1 +1,1 @@
-export const SERVER_URL = "https://ec2-54-162-105-182.compute-1.amazonaws.com:443/api/v1/";
+export const SERVER_URL = "https://springboot-registration-system-f96771fa5707.herokuapp.com/api/v1/";
