@@ -1,5 +1,7 @@
 'use client'
 import {signOut, useSession} from "next-auth/react";
+import {faSquareGithub, faSquareWhatsapp, faLinkedin} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function Dashboard(){
 
@@ -34,8 +36,10 @@ export default function Dashboard(){
 
                     <span className="italic">Thanks for testing my registration system</span>
                 </div>
-                <div>
-                    
+                <div className="flex gap-2 absolute bottom-0 left-0 text-sm justify-center items-center">
+                    <FontAwesomeIcon icons={faSquareGithub} />
+                    <FontAwesomeIcon icons={faLinkedin}/>
+                    <FontAwesomeIcon icons={faSquareWhatsapp}/>
                 </div>
             </main>
         )
