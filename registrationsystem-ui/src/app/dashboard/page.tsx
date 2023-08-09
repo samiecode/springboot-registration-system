@@ -34,6 +34,9 @@ export default function Dashboard(){
 
                     <span className="italic">Thanks for testing my registration system</span>
                 </div>
+                <div>
+                    
+                </div>
             </main>
         )
 
