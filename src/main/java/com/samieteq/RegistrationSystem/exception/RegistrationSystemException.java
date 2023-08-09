@@ -6,7 +6,7 @@ import org.springframework.http.HttpStatus;
 
 @Getter
 @RequiredArgsConstructor
-public class OrderException extends RuntimeException{
+public class RegistrationSystemException extends RuntimeException{
 
     private final String message;
     private final HttpStatus httpStatus;

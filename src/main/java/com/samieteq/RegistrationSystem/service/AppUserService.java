@@ -5,7 +5,7 @@ import com.samieteq.RegistrationSystem.domain.dto.RegistrationRequest;
 import com.samieteq.RegistrationSystem.domain.dto.UserRole;
 import com.samieteq.RegistrationSystem.domain.model.ConfirmationToken;
 import com.samieteq.RegistrationSystem.domain.model.User;
-import com.samieteq.RegistrationSystem.email.EmailSender;
+//import com.samieteq.RegistrationSystem.email.EmailSender;
 import com.samieteq.RegistrationSystem.exception.DuplicateResourceException;
 import com.samieteq.RegistrationSystem.security.jwt.JwtService;
 import lombok.AllArgsConstructor;

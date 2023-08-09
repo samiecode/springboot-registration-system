@@ -2,7 +2,6 @@ package com.samieteq.RegistrationSystem.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.mail.MailSendException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -20,8 +19,8 @@ public class RegistrationSystemExceptionsHandler extends ResponseEntityException
         return new ResponseEntity<>(errorDetail, e.getHttpStatus());
     }
 
-    @ExceptionHandler(OrderException.class)
-    public ResponseEntity<Object> handleExceptions(OrderException e){
+    @ExceptionHandler(RegistrationSystemException.class)
+    public ResponseEntity<Object> handleExceptions(RegistrationSystemException e){
         ErrorDetail errorDetail = new ErrorDetail(e.getMessage(), LocalDateTime.now());
         return new ResponseEntity<>(errorDetail, e.getHttpStatus());
     }

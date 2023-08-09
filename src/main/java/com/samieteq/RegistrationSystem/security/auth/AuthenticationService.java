@@ -4,7 +4,7 @@ import com.samieteq.RegistrationSystem.domain.dto.AuthenticationRequest;
 import com.samieteq.RegistrationSystem.domain.dto.UserDTO;
 import com.samieteq.RegistrationSystem.domain.model.User;
 import com.samieteq.RegistrationSystem.domain.mapper.UserDTOMapper;
-import com.samieteq.RegistrationSystem.email.EmailSender;
+//import com.samieteq.RegistrationSystem.email.EmailSender;
 import com.samieteq.RegistrationSystem.security.jwt.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
