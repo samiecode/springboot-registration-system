@@ -20,7 +20,7 @@ public class AuthenticationService {
   private final JwtService jwtService;
   private final AuthenticationManager authenticationManager;
   private final UserDTOMapper userDTOMapper;
-  private final EmailSender emailSender;
+  //private final EmailSender emailSender;
   public ResponseEntity<?> authenticate(AuthenticationRequest request) {
 
     Authentication authenticate = authenticationManager.authenticate(

@@ -25,7 +25,7 @@ import java.util.UUID;
 public class AppUserService {
     private final AppUserRepository appUserRepository;
     private final PasswordEncoder passwordEncoder;
-    private final EmailSender emailSender;
+    //private final EmailSender emailSender;
     private final ConfirmationTokenService confirmationTokenService;
     private final JwtService jwtService;
 
