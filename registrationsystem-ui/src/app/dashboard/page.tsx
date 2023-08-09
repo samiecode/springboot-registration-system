@@ -40,7 +40,7 @@ export default function Dashboard() {
 						Thanks for testing my registration system
 					</span>
 				</div>
-				<div className="w-full -mt-20 flex gap-4 absolute bottom-0 left-0 text-sm justify-center items-center">
+				<div className="w-full flex gap-4 absolute bottom-20 left-0 text-sm justify-center items-center">
 					<a href="https://github.com/samieteq">
 						<Image
 							src="/github.png"
