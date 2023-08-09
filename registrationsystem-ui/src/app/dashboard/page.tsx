@@ -37,9 +37,9 @@ export default function Dashboard(){
                     <span className="italic">Thanks for testing my registration system</span>
                 </div>
                 <div className="flex gap-2 absolute bottom-0 left-0 text-sm justify-center items-center">
-                    <FontAwesomeIcon icons={faSquareGithub} />
-                    <FontAwesomeIcon icons={faLinkedin}/>
-                    <FontAwesomeIcon icons={faSquareWhatsapp}/>
+                    <a href="https://github.com/samieteq"><FontAwesomeIcon icons={faSquareGithub} /></a>
+                    <a href="https://linkedin.com/in/samieteq"><FontAwesomeIcon icons={faLinkedin}/></a>
+                    <a href="https://wa.me/message/3P66TTUSNCOPM"><FontAwesomeIcon icons={faSquareWhatsapp}/></a>
                 </div>
             </main>
         )
