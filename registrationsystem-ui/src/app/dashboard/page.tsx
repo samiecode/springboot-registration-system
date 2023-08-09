@@ -40,28 +40,28 @@ export default function Dashboard() {
 						Thanks for testing my registration system
 					</span>
 				</div>
-				<div className="w-full p-4 flex gap-4 absolute bottom-0 left-0 text-sm justify-center items-center">
+				<div className="w-full -mt-20 flex gap-4 absolute bottom-0 left-0 text-sm justify-center items-center">
 					<a href="https://github.com/samieteq">
 						<Image
 							src="/github.png"
-							height={25}
-							width={25}
+							height={35}
+							width={35}
 							alt=""
 						/>
 					</a>
 					<a href="https://linkedin.com/in/samieteq">
 						<Image
 							src="/linkedin.png"
-							height={25}
-							width={25}
+							height={35}
+							width={35}
 							alt=""
 						/>
 					</a>
 					<a href="https://wa.me/+2348078960202">
 						<Image
 							src="/whatsapp.png"
-							height={25}
-							width={25}
+							height={35}
+							width={35}
 							alt=""
 						/>
 					</a>
